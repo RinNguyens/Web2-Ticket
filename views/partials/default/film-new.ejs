@@ -1,0 +1,47 @@
+<div class="container">
+            <div class="row">
+                <div class="col-md-12 chude">
+                    <div class="snip1338">
+                        <h5>RinRin</h5>
+                        <h1><i class="fas fa-star"></i>Phim moi</h1>
+                        <h6>Est. 1958</h6>
+                    </div>
+                </div>
+                <% Film.forEach( (film) => { %>
+                    <div class="col-sm-4 col-md-2 move-gird">
+                        <a href="single/<%- film._id %>"><img src="<%- film.file %>" alt="<%- film.file %>"></a>
+                        <div class="film-caption">
+                            <a href="single/<%- film._id %>" class="title"><%- film.title %></a>
+                            <p class="min">Thời lượng : <%- film.time %> Phút</p>
+                            <p class="year">Year</p>
+                        </div>
+                        <div class="new">
+                            NEW
+                        </div>
+                    </div>
+                <% }) %>
+                
+            </div>
+            <div class="row text-center">
+                <div class="col-md-12 chude">
+                    <div class="snip1338">
+                        <h5>RinRin</h5>
+                        <h1><i class="fas fa-star"></i>Top View</h1>
+                        <h6>Est. 1958</h6>
+                    </div>
+                </div>
+                <% Film.forEach( (film) => { %>
+                    <div class="col-sm-4 col-md-2 move-gird">
+                        <a href="single/<%- film._id %>"><img src="<%- film.file %>" alt="<%- film.file %>"></a>
+                        <div class="film-caption">
+                            <a href="single/<%- film._id %>" class="title"><%- film.title %></a>
+                            <p class="min">Thời lượng : <%- film.time %> Phút</p>
+                            <p class="year">Year</p>
+                        </div>
+                        <div class="new">
+                            NEW
+                        </div>
+                    </div>
+                <% }) %>
+            </div>
+        </div>

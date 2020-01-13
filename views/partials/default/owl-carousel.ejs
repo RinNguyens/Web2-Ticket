@@ -1,0 +1,18 @@
+<div class="rinchans owl-carousel owl-theme owl-loaded">
+            <div class="owl-stage-outer">
+                <div class="owl-stage">
+                    <% Film.forEach( (film) => {%>
+                        <div class="owl-item">
+                            <div class="item">
+                                <a href="#"><img src="<%- film.file%>" alt="<%- film.file%>" /></a>
+                                <div class="owl-caption">
+                                    <a href="single/<%- film._id%>" class="title"><%- film.title%></a>
+                                    <p class="min">Thời Lượng : <%- film.time%> Phút</p>
+                                    <p class="year"><%- film.primiereDate%></p>
+                                </div>
+                            </div>
+                        </div>
+                    <%})%>
+                </div>
+            </div>
+        </div>
